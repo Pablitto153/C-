@@ -1,0 +1,68 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+int main() {
+/* 
+Scissors cuts paper.
+Paper covers rock.
+Rock crushes lizard.
+Lizard poisons Spock.
+Spock smashes scissors.
+Scissors decapitates lizard.
+Lizard eats paper.
+Paper disproves Spock.
+Spock vaporizes rock.
+Rock crushes scissors. 
+*/
+  
+/* 
+Write a rock_paper_scissors.cpp program that:
+1) Prompts the user to select either Rock, Paper, Scissors, Lizard, or Spock.
+2) Instructs the computer to randomly select either Rock, Paper, Scissors, Lizard, or Spock.
+3) Compares the user’s choice and the computer’s choice and determine the winner.
+4) Informs the user who the winner is. 
+*/
+
+srand (time(NULL));
+int fortune = rand() % 3 + 1;
+int user = 0;
+
+cout << "====================" << endl;
+cout << "rock paper scissors!" << endl;
+cout << "====================" << endl;
+
+cout << "1) ✊" << endl; // Rock
+cout << "2) ✋" << endl; // Paper
+cout << "3) ✌️" << endl; // Scissors
+cout << "4) 🤏" << endl; // Lizard
+cout << "5) 🖖" << endl; // Spock
+
+cout << "shoot! " << endl;
+
+cin >> user;
+cout << fortune << endl;
+
+if (
+  (user == 3 && fortune == 2) || 
+  (user == 2 && fortune == 1) || 
+  (user == 1 && fortune == 4) || 
+  (user == 4 && fortune == 5) || 
+  (user == 5 && fortune == 3) || 
+  (user == 3 && fortune == 4) || 
+  (user == 4 && fortune == 2) || 
+  (user == 2 && fortune == 5) || 
+  (user == 5 && fortune == 1) || 
+  (user == 1 && fortune == 3) ) {
+  cout << "You won! Congratulation!";
+} 
+else if (user == fortune) {
+  cout << "Game draw!";
+} 
+else {
+  cout << "Computer won :(";
+}
+
+return 0;
+}
