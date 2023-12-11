@@ -1,0 +1,216 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+
+	// Beginning of the story
+	cout << "Winter. December 24." << endl;
+	cout << "It's Christmas, people are in a festive mood." << endl;
+	cout << "There was a complete crime in the city of Maardu." << endl;
+	cout << "A young boy was killed behind the school. The police arrived at the crime scene." << endl;
+	cout << "The victim was a young boy, about 14 yeasrs old, with puncture wounds in the abdomen." << endl;
+	cout << endl;
+
+	int branch;
+
+	cout << "Police found the murder weapon: " << endl;
+	cout << "1) Carrot" << endl; // branch1
+	cout << "2) Pencil" << endl; // branch2
+	cout << "3) Knife" << endl;  // branch3
+	cout << endl;
+	cout << "Choose the weapon" << endl;
+
+	cin >> branch;
+
+	// Branch 1.
+	if (branch == 1) {
+		cout << "The detective examined the body. There were 7 puncture wounds in the body of the dead boy." << endl;
+		cout << "The wounds were round and symmetrical, so it can't be a knife, so what is it ?" << endl;
+		cout << "Police officers inspected the area and found a container, that was used to store crushed stone. " << endl;
+		cout << "We found a bloody carrot in that container." << endl;
+		cout << "The boy was killed while he was going to training." << endl;
+		cout << "The killer was not a man, his footprints in the snow looked like a circle." << endl << endl;
+		cout << "Who could be a murder?" << endl;
+		cout << endl;
+		
+		int murder1 = 0;
+		
+			cout << "1) Snowman." << endl <<
+				"2) Classmate." << endl <<
+				"3) Stepfather." << endl;
+			cout << endl;
+			cin >> murder1;
+		
+		// The snowman story
+		if (murder1 == 1) {
+			cout << "A few days later, the detective found a snowman standing in a field behind the school without a carrot in his nose." << endl;
+			cout << "The detective went to the police station and took away the evidence(carrot)." << endl;
+			cout << "When detective arraived behind the school, snowman was still there." << endl;
+			cout << "Detective approached the snowman and inserted the evidence(carrot) into the missing place." << endl; 
+			cout << "And snowman started to fight with detective." << endl;
+			cout << "The snowman took the carrot into his branches and began to hit the detective with it like a knife." << endl;
+			cout << "The detective took off the snowman's head with one precise blow. The Snowman on the snow." << endl;
+			cout << endl;
+			cout << "!=================================!" << endl;
+			cout << endl;
+			cout << "The snowman turned out to be the boy's killer. It was clear from the camera." << endl;
+			cout << "Some magicians had built a snowman at lunchtime." << endl;
+			cout << "The snowman came to life and killed one boy. After which the detective found him and blew his head off." << endl;
+
+			return 0;
+		}
+		// The classmate story
+		else if (murder1 == 2) {
+			cout << "The detective could not suspect the classmate whom the murdered boy had bullied." << endl;
+			cout << "The classmate whom the detective interviewed turned out to be the best friend of the murdered boy." << endl;
+			cout << "They have been friedns with him since kindergarten." << endl;
+			cout << "And classmate said we always bullied each other, but only in a friendly way." << endl;
+			cout << "No evidence was found on the classmate." << endl;
+			cout << endl;
+			cout << "!=================================!" << endl;
+			cout << endl;
+			cout << "The killer is not a classmate." << endl;
+
+			return 0;
+		}
+		// The stepfather story
+		else if (murder1 == 3) {
+			cout << "The detective interviewed the mother of the murdered boy." << endl;
+			cout << "She said the boy lived with me and his stepfather, becauce his father had left for another country." << endl;
+			cout << "The detective also interviewed the stepfather." << endl;
+			cout << "He said he was at work from morning to evening and came home very late." << endl;
+			cout << "And he loved the boy and treated the boy well." << endl;
+			cout << "The boys's mother confirmed stepfather's words." << endl;
+			cout << "And also the stepfather was at work on the day of the murder, this was confirmed by his colleagues." << endl;
+			cout << endl;
+			cout << "!=================================!" << endl;
+			cout << endl;
+			cout << "The killer is not the stepfather." << endl;
+
+			return 0;
+		}
+
+	}
+
+	// Branch 2
+	if (branch == 2) {
+		cout << "The detective, after examining the body, asked experts how he was killed." << endl;
+		cout << "Experts said the puncture wounds were small, round and symmetrical." << endl;
+		cout << "A few minutes later, a police officer ran up to the detective and said he have found the murder weapon." << endl;
+		cout << "It turned out to be a bloody pencil that the policeman have found in the snow." << endl << endl;
+		cout << endl;
+		cout << "The detective began to suspect two people." << endl;
+		cout << "Choose one who could be the murder ?" << endl;
+		cout << endl;
+
+		int murder1;
+
+		cout << "1) Labor techer" << endl; // Trudovik
+		cout << "2) Classmate" << endl; // Terpila 
+		cout << endl;
+
+		cin >> murder1;
+		// Trudovik's story
+		if (murder1 == 1) {
+			cout << "The detective who suspected the labor teacher, summoned him to the police station for questioning." << endl;
+			cout << "Trudovik said he celebrated Christmas with his family." << endl;
+			cout << "Also he said that Trudovik and father of the murdered man are good friends." << endl;
+			cout << "The murdered boy for Trudovik was like his own son." << endl;
+
+			return 0;
+		}
+		// Classmate's story
+		else if (murder1 == 2) {
+			cout << "The detective interviewed the parants of murdered boy." << endl;
+			cout << "They said that teachers complained about the boy, because he bullied and spread bad rumors about a classmate." << endl;
+			cout << "The detective went to the home of a boy who was being bullied. His parents said he hasn't returned from training yet." << endl;
+			cout << "The detective said they found a bloody pencil and it was taken for examination." << endl;
+			cout << "Classmate haven't came at home after training." << endl;
+			cout << "The detective began to looking for him. Experts called to the detective and said that they found fingerprints on a pancil." << endl;
+			cout << "And these fingerprints were from the classmate who was bullied by the murdered boy." << endl;
+			cout << "Police found the killer in the forest a couple of days later." << endl;
+
+			return 0;
+		}
+
+	}
+
+	// Branch 3 
+	if (branch == 3) {
+
+		// Killer's story
+		cout << "The detective examined the body. There were 7 puncture wounds on the body." << endl;
+		cout << "It looked like the blows were inflicted with a knife." << endl;
+		cout << "The assumption was correct, because they found the bloody knife in the trash nearby." << endl;
+		cout << endl;
+		cout << "Part 1. Parents." << endl;
+		cout << "The detective immediately went to the parents of the murdered boy." << endl;
+		cout << "There was only his mother at home. The detective told her about the murder and asked where is the father?" << endl;
+		cout << "She said he is stepfather and he is coming home soon after work." << endl;
+		cout << "She said stepfather very angry with the boy, because boy's father call him quite often" << endl; 
+		cout << "and takes his when it is convenient for him." << endl;
+		cout << "After the child returns from his father, he behaves aggressively, misbehaves and doesn't listen." << endl;
+		cout << "And when the stepfather drinks, he starts yelling at the child and sometimes hits him." << endl;
+		cout << "Father returned home after work. He was met by a detective." << endl;
+		cout << "The detective began the interrogation. Stepfather said he was at work when the murder happened." << endl;
+		cout << "He said he didn't killed him." << endl;
+		cout << endl;
+		cout << "Part 2. Gey friend." << endl;
+		cout << "There was murdered boy's friend and detective called him. They met in the park." << endl;
+		cout << "Detective began to ask him about their friendship. That friend turned out to be a gey." << endl;
+		cout << "There was no relationship between them. His friend said that they have been friends since childhood." << endl;
+		cout << "He was celebrating Christmas with his parents at home when the murder happened." << endl;
+		cout << "But friend said that boy had a problems with the weed. Friend said the name of the drag dealer." << endl;
+		cout << "The murdered boy bought weed from him." << endl;
+		cout << endl;
+		cout << "Part 3. Drag dealer." << endl;
+		cout << "Police caught a drug dealer and brought him to the police station for questioning." << endl;
+		cout << "The detective met him in the interrogation room." << endl;
+		cout << "The detective told him about the murder, he showed a picture of the murdered boy." << endl; 
+		cout << "The drag dealer recognized the boy." << endl;
+		cout << "But he asked to be released after interrogation, then he would tell what heppened." << endl;
+		cout << "After interrogation the detective released the drug dealer, because he told him everythiing." << endl;
+		cout << "Drag dealer said that murdered boy had a problems with his stepfather and he tried to smoke weed." << endl;
+		cout << "Then he found drag dealer and wanted to by some weed, but drag dealer refused him." << endl;
+		cout << endl;
+
+		int true_killer = 0;
+
+		for (int x = 0; x < 4 && true_killer != 1 && true_killer != 2 && true_killer != 3; ++x) {
+			cout << "1) Drag dealer." << endl <<
+				"2) Gey friend." << endl <<
+				"3) Alcoholic stepfather." << endl;
+			cin >> true_killer;
+		}
+		// Wrong valid choice
+		if (true_killer != 1 && true_killer != 2 && true_killer != 3) {
+
+			cout << "Sorry you haven't entered a valid choice." << endl;
+
+			return 0;
+		}
+		// True valid choice
+		else if (true_killer == 3) {
+			cout << "Yes, you are right. The killer of that young boy is his stepfather." << endl;
+			cout << "We found his fingerprints on the knife." << endl;
+			cout << "And also his boss said that he went somewhere during the work." << endl;
+			cout << "THE END" << endl;
+
+			return 0;
+		}
+		// Drag dealer ?
+		else if (true_killer == 1) {
+			cout << "No, drag dealer is not a killer. He saw the boy only once." << endl;
+
+			return 0;
+		}
+		// Wrong killer
+		else {
+			cout << "Unfortunately, you haven't found the killer." << endl;
+
+			return 0;
+		}
+
+	}
+}
